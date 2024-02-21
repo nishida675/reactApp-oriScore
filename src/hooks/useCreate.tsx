@@ -8,7 +8,8 @@ import { useMessage } from "./useMessage";
 export const useCreate = () => {
   const history = useNavigate();
   const { showMessage } = useMessage();
-  const apiUrl = "http://localhost:8080/api/create";
+  //const apiUrl = "http://localhost:8080/api/create";
+  const apiUrl = "http://18.182.187.244:8080/api/create";
   const [loading, setLoading] = useState(false);
   const create = useCallback(
     (userName: string, userPass: string) => {

@@ -13,7 +13,8 @@ export const useAllClass = () => {
   const getClases = useCallback(async(tournamentId: number) => {
     setLoading2(true);
     try {
-      const response = await axios.get<Array<Participant>>(`http://localhost:8080/apiTournament/getClass?tournamentId=${tournamentId}`);
+      //const response = await axios.get<Array<Participant>>(`http://localhost:8080/apiTournament/getClass?tournamentId=${tournamentId}`);
+      const response = await axios.get<Array<Participant>>(`http://18.182.187.244:8080/apiTournament/getClass?tournamentId=${tournamentId}`);
       setClases(response.data);
       return response.data; 
     } catch (error) {
