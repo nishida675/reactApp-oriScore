@@ -12,7 +12,7 @@ export const useAuth = () => {
   const { showMessage } = useMessage();
   const { setLoginUser } = useLoginUser();
   //const apiUrl = "http://localhost:8080/api/authLogin";
-  const apiUrl = "http://10.0.10.182:8080/api/authLogin";
+  const apiUrl = "http://18.182.187.244:8080/api/authLogin";
 
   const [loading, setLoading] = useState(false);
   const login = useCallback(
