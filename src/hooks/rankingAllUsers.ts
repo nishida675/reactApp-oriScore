@@ -14,7 +14,7 @@ export const useRankingAllUsers = () => {
     setLoading(true);
     axios
       //.get<Array<User>>("http://localhost:8080/api/ranking")
-      .get<Array<User>>("https://18.182.187.244:8080/api/ranking")
+      .get<Array<User>>("http://18.182.187.244:8080/api/ranking")
       .then((res) => setUsers(res.data))
       .catch(() => {
         showMessage({ title: "ユーザー取得に失敗しました", status: "error" });
