@@ -20,7 +20,7 @@ export const useAllParticipant = () => {
 
     axios
       //.get<{ [key: string]: Participant[] }>(`http://localhost:8080/apiTournament/getParticipant?userId=${userId}&tournamentId=${tournamentId}&className1=${className1}&className2=${className2}`)
-      .get<{ [key: string]: Participant[] }>(`http://18.182.187.244:8080/apiTournament/getParticipant?userId=${userId}&tournamentId=${tournamentId}&className1=${className1}&className2=${className2}`)
+      .get<{ [key: string]: Participant[] }>(`https://18.182.187.244:8080/apiTournament/getParticipant?userId=${userId}&tournamentId=${tournamentId}&className1=${className1}&className2=${className2}`)
       .then((res) => {
         //console.log("API Response:", res.data);
         const usersArray1 = res.data[className1] || [];
