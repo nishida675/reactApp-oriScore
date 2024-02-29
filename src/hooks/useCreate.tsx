@@ -9,7 +9,7 @@ export const useCreate = () => {
   const history = useNavigate();
   const { showMessage } = useMessage();
   //const apiUrl = "http://localhost:8080/api/create";
-  const apiUrl = "https://nabyss-totomoni.com:8080/api/create";
+  const apiUrl = "https://nabyss-totomoni.com/api/create";
   const [loading, setLoading] = useState(false);
   const create = useCallback(
     (userName: string, userPass: string) => {
