@@ -14,7 +14,7 @@ export const useAllTournament = () => {
     setLoading(true);
     axios
       //.get<Array<tournament>>("http://localhost:8080/apiTournament/get")
-      .get<Array<tournament>>("https://nabyss-totomoni.com/apiTournament/get")
+      .get<Array<tournament>>("https://nabyss-totomoni.com:8080/apiTournament/get")
       .then((res) => setTournaments(res.data))
       .catch(() => {
         showMessage({ title: "大会取得に失敗しました", status: "error" });

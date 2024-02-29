@@ -14,7 +14,7 @@ export const useAllClass = () => {
     setLoading2(true);
     try {
       //const response = await axios.get<Array<Participant>>(`http://localhost:8080/apiTournament/getClass?tournamentId=${tournamentId}`);
-      const response = await axios.get<Array<Participant>>(`https://nabyss-totomoni.com/apiTournament/getClass?tournamentId=${tournamentId}`);
+      const response = await axios.get<Array<Participant>>(`https://nabyss-totomoni.com:8080/apiTournament/getClass?tournamentId=${tournamentId}`);
       setClases(response.data);
       return response.data; 
     } catch (error) {
